@@ -1,0 +1,109 @@
+/* Set the GIF as the background */
+body {
+    background-image: url('happy-valentine-gif-2.gif'); /* Path to your GIF */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent the GIF from repeating */
+    position: relative;
+    z-index: 20;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margin */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-container {
+    position: relative;
+    border: 10px solid pink; /* Border around the content */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9;
+}
+
+/* Style for the "Yes" button */
+.buttons button:first-child {
+    background-color: green; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 25%;
+    margin-left: 0%;
+    z-index: 10; /* Ensure it's above the background */
+}
+
+/* Style for the "No" button */
+.buttons button:last-child {
+    background-color: red; /* Red background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 10; /* Ensure it's above the background */
+}
+
+.gif1, .gif2 {
+    z-index: 5; /* Ensure GIFs are behind the background */
+}
+
+/* Hover effects */
+.buttons button:first-child:hover {
+    background-color: darkgreen; /* Darker green on hover */
+}
+
+.buttons button:last-child:hover {
+    background-color: darkred; /* Darker red on hover */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe5e5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  margin: 20px;
+}
+
+.container .tenor-gif-embed {
+  max-width: 200px;
+}
+
+.container .btn {
+  display: flex;
+  gap: 25px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: black;
+  background: #fff;
+  padding: 10px 25px;
+  border-radius: 8px;
+  box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+}
